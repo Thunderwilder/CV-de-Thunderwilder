@@ -1,0 +1,194 @@
+body
+{
+	background-image: url("images/backgroundCV.jpg");
+	background-attachment: fixed;
+}
+
+@font-face /* police de texte personnalisée */
+{
+	font-family: 'kelvinch';
+	src: url('fonts/Kelvinch-Roman.otf');
+	src: url('fonts/Kelvinch-Bold.otf');
+	src: url('fonts/Kelvinch-Bold.otf?#iefix');
+	src: url('fonts/Kelvinch-BoldItalic.otf');
+}
+
+
+/* -----------------------------------------------------CONTENEUR 1 (début)----------------------------------------------------- */
+
+#conteneur1
+{
+	display: flex;
+	height: 100%;
+}
+
+/* -----------------------------------------------------CONTENEUR 2 (début)----------------------------------------------------- */
+
+#conteneur2
+{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+h1
+{
+	text-align: center;
+	color: #0d457c;
+	font-size: 45px;
+	font-family: 'kelvinch', Verdana, Arial, sans-serif;
+	text-shadow: 6px 6px 3px black;
+	/* texte centré dans le bloc ; couleur, taille, police et ombre du texte */
+
+
+	border: 9px #114170 groove;
+	border-radius: 20px;
+	box-shadow: 6px 6px 10px #4488b4;
+	background-color: rgba(198,154,47,0.3);
+	text-shadow: 3px 3px 3px white;
+	/* bordure du bloc (avec arrondi) ; ombre et couleur de fond du bloc */
+
+
+	width: 90%;
+	/* largeur du bloc occupant 50% de la page */
+	margin: auto;
+}
+
+p
+{
+	text-align: center;
+	color: darkgrey;
+	font-size: 18px;
+	font-family: 'kelvinch', Verdana, Arial, sans-serif;
+}
+
+/* -----------------------------------------------------CONTENEUR 3 (début)----------------------------------------------------- */
+
+#conteneur3
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	overflow: auto;
+	height: 500%;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.experience, .competences, .formation
+{
+	height: 25%;
+	width: 25%;
+}
+
+.exp, .comp, .form
+{
+	color: #0d457c;
+	font-size: 45px;
+	font-family: 'kelvinch', Verdana, Arial, sans-serif;
+	text-shadow: 3px 3px 3px white;
+	flex-direction: row;
+	/* couleur, taille, police et ombre du texte */
+}
+
+.description
+{
+	color: darkgrey;
+	font-size: 16px;
+	font-family: 'kelvinch', Verdana, Arial, sans-serif;
+	text-shadow: 3px 3px 3px grey;
+	/* couleur, taille, police et ombre du texte */
+}
+
+
+/* -----------------------------------------------------CONTENEUR 3 (fin)----------------------------------------------------- */
+
+/* -----------------------------------------------------CONTENEUR 2 (fin)----------------------------------------------------- */
+
+#avatar
+{
+	border: 9px #114170 groove;
+	border-radius: 20px;
+	box-shadow: 6px 6px 10px #4488b4;
+	height: 355px;
+}
+
+img
+{
+	border-radius: 10px;
+}
+
+/* -----------------------------------------------------CONTENEUR 1 (fin)----------------------------------------------------- */
+
+@media all and (max-width: 1200px)
+{
+	#conteneur3
+	{
+		display: flex;
+		flex-direction: column;
+		margin-left: 30px;
+	}
+
+	.experience, .competences, .formation
+	{
+		width: 90%;
+	}
+
+	#avatar
+	{
+		margin-left: 10px;
+	}
+}
+
+@media all and (max-width: 800px)
+{
+	h1
+	{
+		font-size: 30px;
+	}
+	p
+	{
+		font-size: 14px;
+	}
+
+	ul
+	{
+		font-size:14px;
+	}
+
+	.exp, .comp, .form
+	{
+		font-size: 30px;
+	}
+
+	.conclusion
+	{
+		font-size: 14px;
+	}
+
+	#conteneur3
+	{
+		margin-top: 25px;
+	}
+	
+	#avatar
+	{
+		display:none;
+	}
+}
+
+@media all and (max-width: 600px)
+{
+	#conteneur3
+	{
+		margin-top: 25px;
+	}
+
+	#avatar
+	{
+		display:none;
+	}
+}
+
+
